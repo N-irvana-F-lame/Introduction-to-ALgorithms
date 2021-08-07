@@ -13,7 +13,7 @@ void insertion_sort(vi &v){
         int key = v[i];
         // Insert v[i] into sorted sequence v[0 ... i-1]
         int j = i-1;
-        while(j >= 0 && v[j] > key){
+        while(j >= 0 && v[j] > key){ // ( v[j] < key -> non-increasing order )
             v[j+1] = v[j];
             j--;
         }
